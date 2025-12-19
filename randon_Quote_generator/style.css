@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(62, 183, 142);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button{
+    background-color: rgb(237, 83, 83);
+    color: beige;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+h1{
+    font-size: 20px;
+}

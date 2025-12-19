@@ -1,0 +1,31 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(grey, white 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .card{
+    width: 300px;
+    background-color: rgb(210, 209, 209);
+    padding: 20px;
+    border-radius: 10px;
+ }
+
+ .card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+ }
+   
+ .card h2{
+   text-align: center;
+   color: white;
+ }
