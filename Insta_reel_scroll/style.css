@@ -92,8 +92,10 @@ section{
     padding: 25px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     text-align: center;
+    
 }
 .right h4{
     cursor: pointer;
@@ -107,12 +109,44 @@ section{
     font-weight: 500;
 }
 .right>div{
+    width: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .love{
     color: red;
+}
+
+.right>div h4{
+    pointer-events: none
+}
+.right>div h6{
+    pointer-events: none
+}
+
+
+.mute{
+    color: white;
+    background-color: #33333343;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer ;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.mute i{
+    font-size: 20px;
+    pointer-events: none;
+}
+.mute:active{
+    scale: 0.95;
 }
