@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --x: 400px;
+    --y: 400px;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(./image/one_piece_charaters.jpg);
+    background-size: cover;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background: radial-gradient(200px at var(--x) var(--y), rgba(248, 247, 247, 0), rgba(0, 6, 6, 0.966));
+}
