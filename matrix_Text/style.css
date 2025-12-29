@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: rgb(49, 180, 9);
+    font-size: 3rem;
+    font-family: monospace;
+    padding: 10px;
+}
+p:hover{ 
+    background-color: rgba(47, 255, 106, 0.196);
+}
+    
