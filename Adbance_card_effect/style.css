@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes borderAnimate {
+    from {
+        --rotate: 0deg;
+    }
+    to {
+        --rotate: 360deg;
+    }
+}
+
+
+.box{
+    max-width: 400px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 0px gold;
+    text-shadow: 0 0 10px gold;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.986)) padding-box,
+                conic-gradient(from var(--rotate), rgb(0, 0, 0), gold, black) border-box;
+    border: 0.1px solid rgba(255, 255, 255, 0);
+    animation: borderAnimate 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+}
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 40px gold;
+    color: gold;
+}
+.box img{
+    width: 100%;
+}
